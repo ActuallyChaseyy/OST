@@ -23,7 +23,7 @@ Sited from [ARIN's official page](https://www.arin.net/reference/research/statis
 
 In a LAN, there will usually be a device managing the DHCP service, so IP addresses are handed out automatically on a lease. IP addresses can also be set on devices that require a static IP. 
 
-### Setting a static IP 
+### Setting a static IPv4 
 
 Every device is different and requires a different process to set an IP. For this demonstration, we will use Windows Server 2022. 
 1. In the Server Manager, navigate to `Local Server`

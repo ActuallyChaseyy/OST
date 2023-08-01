@@ -1,12 +1,12 @@
-#ICT40120 #ICTNWK420 #VirtualMachine #Networking #Scott #Paul #info #vmware
+#ICT40120 #ICTNWK420 #VirtualMachine #Networking #Scott #Paul #info #vmware #sysprep 
 
 ---
 
-### Setting up the Virtual Machine
+## Setting up the Virtual Machine using ISO
 
 The virtual machines we will set up are [Type 1 virtual machines](Type%201%20virtual%20machines.md). They will be running inside of VMware Workstation Professional, as it has a super user friendly UI, that is easy to navigate while still hosting many amazing features. 
 
-To begin setting up a Windows Server 2022 / 2019 instance, you have to create a new [virtual machine](Virtual%20Machines.md). To create a new virtual machine, press the button with the plus icon, or, right click the left side panel and select `New virtual machine...`. 
+To begin setting up a [[Windows Server]] 2022 / 2019 instance, you have to create a new [virtual machine](Virtual%20Machines.md). To create a new virtual machine, press the button with the plus icon, or, right click the left side panel and select `New virtual machine...`. 
 
 1. In the new dialog window that opens, create a "Typical" machine. 
 2. When asked to provide an installer disc or image, select `I will install the operating system later`. See [[#Footnotes#1]] for why.
@@ -32,6 +32,30 @@ To power on the virtual machine, select it in the left side panel, then select `
 6. If prompted, hit `Restart Now`
 
 Make sure to create a snapshot! 
+
+Optionally, now would be a good time to do the initial configuration of the [[Windows Server Firewall]]. 
+
+### Creating a template
+
+Creating a template is a very helpful tool, as it allows you to bypass all the initial setup and jump straight into work. To create an OVF template:
+1. Power off the virtual machine you wish to make a template from. 
+2. Make sure the correct server is selected in the left side panel of VMware
+3. Go to `File`, then `Export to OVF`. Make sure to save it in a separate location to your virtual machines.
+
+## Setting up the virtual machine using OVF
+
+To create a virtual machine from an OVF;
+1. Select `File` then `Open` in VMware
+2. Navigate to your relevant OVF file, and open it
+VMware will then ask for a new name and directory to create the virtual machine. 
+
+If you have made a Windows machine from the OVF format, it is best practice to rerun the Out of Box Experience, to reset system identifiers. To do this:
+1. Hit `Win + R` and run `sysprep`. If an explorer window pops up, run the `sysprep.exe` file.
+2. Select `OOBE` in the drop down menu, and check the box for `Generalize`
+3. Hit `Ok` and wait
+
+This will reboot the machine automatically, and open the Out of Box Experience. Here you will reselect the region if you care, and set a new password. After that, you're right to go.
+
 
 ### Footnotes
 ##### 1: When asked to provide a installer disc, why select "do it later"?

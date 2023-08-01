@@ -4,9 +4,11 @@
 
 ## How to set up and use DNS on windows server
 
-To use windows server as a DNS server, the machine **must** have a [static IPv4 address](IP%20Addressing#Setting%20a%20static%20IP). 
+To use [[windows server]] as a DNS server, the machine **must** have a [static IPv4 address](IP%20Addressing#Setting%20a%20static%20IPv4). 
 
 1. Add the DNS role to the server, head to `Manage` > `Add roles and Features`
+Please note, if you have already installed [[Active Directory Domain Services]], DNS will already be installed.
+
 2. In `Server Roles`, make sure `DNS Server` is ticked. Click `Add Features` in the dialogue that pops up
 3. Hit next until you can click install, then click install. 
 
@@ -30,3 +32,4 @@ If you were to send a request to this server for youtube.com it won't be able to
 2. Inside properties, click `Forwarders`
 3. Select `Edit`. This will bring up the dialogue for adding DNS servers. If you have a preferred DNS server, put it here, otherwise, use Cloudflare by entering `1.1.1.1`
 
+### Creating DNS records

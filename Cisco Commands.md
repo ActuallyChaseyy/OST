@@ -91,3 +91,36 @@ vtp version 2
 ```
 show vtp status
 ```
+
+# Router Specific
+
+**WAN IP Address (conf)**
+
+```
+int [wan link]
+ip address [ip] 255.255.255.252
+```
+*We're using serial, your link should be s0/1/0*
+
+**Enable Router RIP (conf)**
+
+```
+router rip
+version 2
+no auto-summary
+```
+
+**Enable EIGRP (config)**
+
+```
+router eigrp [asn]
+no auto-summary
+```
+
+**Advertise Network (config-router)**
+
+```
+network [wan range]
+network [lan range]
+```
+*works for rip and eigrp*

@@ -1,7 +1,9 @@
-#Networking #info #howto 
-
-----
-
+---
+tags:
+  - Networking
+  - info
+  - howto
+---
 ## What are IP addresses
 
 IP addresses are how computers communicate. IPv4 addresses are made up of 4 segments, called *octets*, that are derived from binary numbers. This is what a standard IP address might look like:

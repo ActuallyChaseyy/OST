@@ -1,7 +1,10 @@
-#Networking #Scott #info #ICT40120 
-
 ---
-
+tags:
+  - Networking
+  - Scott
+  - info
+  - ICT40120
+---
 # Interfaces
 
 **List Interfaces**
@@ -118,7 +121,6 @@ no auto-summary
 ```
 
 **Enable EIGRP (config)**
-
 ```
 router eigrp [asn]
 no auto-summary

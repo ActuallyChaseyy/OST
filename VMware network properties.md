@@ -1,5 +1,11 @@
-#ICTNWK420 #VirtualMachine #Networking #Scott #howto #vmware 
-
+---
+tags:
+  - ICTNWK420
+  - VirtualMachine
+  - Networking
+  - Scott
+  - howto
+  - vmware
 ---
 ## The Network Properties
 To see the Virtual Network properties, go to `Edit > Virtual Network Editor `. To change settings, add or remove networks, hit the `Change Settings` button in the bottom right, and allow access in the UAC prompt.

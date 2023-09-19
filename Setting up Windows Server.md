@@ -1,7 +1,15 @@
-#ICT40120 #ICTNWK420 #VirtualMachine #Networking #Scott #Paul #info #vmware #sysprep 
-
 ---
-
+tags:
+  - ICT40120
+  - ICTNWK420
+  - VirtualMachine
+  - Networking
+  - Scott
+  - Paul
+  - info
+  - vmware
+  - sysprep
+---
 ## Setting up the Virtual Machine using ISO
 
 The virtual machines we will set up are [Type 1 virtual machines](Type%201%20virtual%20machines.md). They will be running inside of VMware Workstation Professional, as it has a super user friendly UI, that is easy to navigate while still hosting many amazing features. 

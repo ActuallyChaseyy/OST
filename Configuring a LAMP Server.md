@@ -1,7 +1,10 @@
-#ICTSAS432 #Networking #Paul #howto 
-
 ---
-
+tags:
+  - ICTSAS432
+  - Networking
+  - Paul
+  - howto
+---
 ### What is a LAMP Server
 
 LAMP Server is the common name of a type of web server, short for Linux Apache MySQL and PHP, a common stack of tools generally used for web content. 

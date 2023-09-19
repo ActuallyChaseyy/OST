@@ -1,7 +1,9 @@
-#Networking #howto #Scott 
-
 ---
-
+tags:
+  - Networking
+  - howto
+  - Scott
+---
 ## DHCP
 
 DHCP, or "Dynamic Host Configuration Protocol" (which you will probably never say again), is an extremely common network protocol that automatically assigns IP addresses and other network configuration settings to devices on a network. 

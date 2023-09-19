@@ -1,3 +1,11 @@
+---
+tags:
+  - Networking
+  - howto
+  - info
+  - VirtualMachine
+---
+
 <sub>(A lot of info has been pulled from the Wazuh docs, while most of the how-to crap was written by me)</sub>
 
 Wazuh is a free and open source security platform that unifies XDR (Extended Detection Response) and SIEM (Security Information and Event Management) capabilities. It protects workloads across on-prem, virtualized, containerized, and cloud-based environments. 

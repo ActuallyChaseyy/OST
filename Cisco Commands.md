@@ -44,6 +44,12 @@ switchport access vlan [vlan id]
 show vlan brief
 ```
 
+**List Trunks and Allowed VLANS**
+
+```
+show int trunk
+```
+
 **Create VLAN (config)**
 
 ```
@@ -58,6 +64,7 @@ exit
 no vlan [vlan id]
 ```
 
+**VLAN Routing (Layer 3 Switch)**
 
 # VTP 
 
@@ -124,3 +131,43 @@ network [wan range]
 network [lan range]
 ```
 *works for rip and eigrp*
+
+### Sub Interface
+
+**Select Sub Interface (conf)**
+
+```
+int [interface].[subint num]
+```
+
+**Set Trunk Interface**
+
+```
+encapsulation dot1q [vlan num]
+```
+
+**Set Sub Interface IP**
+
+```
+ip address [IP Address] [Subnet]
+```
+
+**DHCP Forwarding**
+
+```
+ip helper-address [DHCP IP]
+```
+
+**Demo Sub Interface Setup**
+
+```
+int g0/0
+no ip address
+no shutdown
+exit
+
+int g0/0.1
+encapsulation dot1q 1
+ip address 10.0.0.1 255.255.255.0
+no shutdown
+```

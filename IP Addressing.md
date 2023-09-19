@@ -34,7 +34,7 @@ Local Area Networks, or LANs, use specific ranges of IP addresses. Generally one
 As a side note, only a portion of the 192 and 172 ranges are designated for LAN networks. In 2012, ARIN began allocating the 172 address space to internet service, wireless and content providers. There have been reports that some internet service providers have been denying devices having IPs from within the entire `172.0.0.0/8` range. 
 Sited from [ARIN's official page](https://www.arin.net/reference/research/statistics/address_filters/) 
 
-In a LAN, there will usually be a device managing the DHCP service, so IP addresses are handed out automatically on a lease. IP addresses can also be set on devices that require a static IP. 
+In a LAN, there will usually be a device managing the [DHCP service](DHCP.md), so IP addresses are handed out automatically on a lease. IP addresses can also be set on devices that require a static IP. 
 
 ### Setting a static IPv4 
 

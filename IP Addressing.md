@@ -4,6 +4,19 @@
 
 ## What are IP addresses
 
+IP addresses are how computers communicate. IPv4 addresses are made up of 4 segments, called *octets*, that are derived from binary numbers. This is what a standard IP address might look like:
+11011111101011000001000000011111
+
+Thats really hard to read, so we split it into octets, which are groups of 8 bits:
+
+11011111 . 10101100 . 00010000 . 00011111
+
+That's still only good for a computer. To make it easier for humans to read, we convert it into base10, or decimal, which will look like this:
+
+223.172.16.31
+
+This is the address that is given to the computer.  
+
 ## Subnet Mask
 
 ## IPv4 vs IPv6

@@ -173,3 +173,33 @@ encapsulation dot1q 1
 ip address 10.0.0.1 255.255.255.0
 no shutdown
 ```
+
+# NAT
+
+**Set WAN NAT**
+
+```
+int [wan int]
+ip nat outside
+```
+
+**Set LAN NAT**
+
+```
+int [lan int]
+ip nat inside
+```
+*outside must be set first*
+
+**Create access control list**
+
+```
+access-list [ID] [Allow/Deny] [Network IP] [Inverse Subnet]
+```
+
+**Enable NAT on List**
+
+```
+ip nat inside source list [ID] interface [WAN int] overload 
+```
+

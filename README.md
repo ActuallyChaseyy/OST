@@ -2,6 +2,8 @@
 
 Recently I discovered the practice of "active externalization", which is simply writing down everything instead of trying to remember it all (internalization). I think that this note taking system will be amazingly helpful with Certificate 4, so I'm open sourcing my "Obsidian Vault". This way anyone and everyone can access all the notes I take, and can contribute as well! 
 
+Update (6-12-23): Hello future Cert IV's and or stalkers! I'm unlikely to ever update this documentation, as its pretty high level how to stuff that I don't really look at ever. I will review PRs and other contribs tho! A lot of this is still pretty good for the Cert IV in ICT (Network Specialisation) Course, and for that I'll leave it public. 
+
 ---
 
 # How to use
